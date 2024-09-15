@@ -26,11 +26,19 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #a10202;
+            color: #fff;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             overflow: hidden;
+            padding-bottom: 100px; /* Espaço extra para o footer fixo */
         }
         .film {
             margin-bottom: 30px;
@@ -38,30 +46,38 @@
             border-radius: 8px;
             background: white;
             overflow: hidden;
+            padding: 15px;
         }
         .film img {
-            width: 100%;
+            width: 250px; /* Definindo a largura das imagens */
             height: auto;
-        }
-        .film-content {
-            padding: 15px;
+            display: block; /* Garante que as imagens não tenham espaço extra ao redor */
+            margin: 0 auto; /* Centraliza as imagens */
         }
         .film-content h2 {
             margin-top: 0;
             color: #a10202;
         }
-        .footer {
-            background-color: #a10202;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+        
         .footer a {
             color: #ffd700;
             text-decoration: none;
+        }
+        .prizes {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .prizes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .prizes li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -74,12 +90,12 @@
         <a href="#filmes">Filmes</a>
         <a href="#premios">Prêmios</a>
     </div>
+
     <div class="container" id="filmes">
         <!-- Jurassic Park -->
         <h2>Jurassic Park</h2>
-        <img src="jp_posterFilme_JurassicPark1.jpg" height="250px" width="250px">
         <div class="film">
-            <alt="Jurassic Park 1">
+            <img src="jp_posterFilme_JurassicPark1.jpg" alt="Jurassic Park 1">
             <div class="film-content">
                 <h2>Jurassic Park (1993)</h2>
                 <p><strong>Direção:</strong> Steven Spielberg</p>
@@ -92,9 +108,8 @@
                     atrações são variadas espécies de dinossauros recriados através da engenharia genética.</p>
             </div>
         </div>
-            <img src="jp_posterFilme_JurassicPark2.jpg" height="250px" width="250px">
         <div class="film">
-            <alt="Jurassic Park 2">
+            <img src="jp_posterFilme_JurassicPark2.jpg" alt="Jurassic Park 2">
             <div class="film-content">
                 <h2>Jurassic Park: O Mundo Perdido (1997)</h2>
                 <p><strong>Direção:</strong> Steven Spielberg</p>
@@ -107,9 +122,8 @@
                     Richard Attenborough.</p>
             </div>
         </div>
-            <img src="jp_posterFilme_JurassicPark3.jpg" height="250px" width="250px">
         <div class="film">
-            <alt="Jurassic Park 3">
+            <img src="jp_posterFilme_JurassicPark3.jpg" alt="Jurassic Park 3">
             <div class="film-content">
                 <h2>Jurassic Park III (2001)</h2>
                 <p><strong>Direção:</strong> Joe Johnston</p>
@@ -123,31 +137,31 @@
 
         <!-- Jurassic World -->
         <h2>Jurassic World</h2>
-            <img src="jp_posterFilme_JurassicPark4.jpg" height="250px" width="250px">
         <div class="film">
-            <alt="Jurassic World 1">
+            <img src="jp_posterFilme_JurassicPark4.jpg" alt="Jurassic World 1">
             <div class="film-content">
                 <h2>Jurassic World (2015)</h2>
                 <p><strong>Direção:</strong> Colin Trevorrow</p>
                 <p>Descrição: 
                     Jurassic World (no Brasil Jurassic World: O Mundo dos Dinossauros; em Portugal Mundo Jurássico) é um
-                    filme estadunidense de ficção científica , aventura, e ação dirigido por Colin Trevorrow[5].
+                    filme estadunidense de ficção científica, aventura e ação dirigido por Colin Trevorrow.
                     É o quarto filme da franquia Jurassic Park, e foi produzido pela Universal Pictures em parceria com a
                     Amblin Entertainment e com a Legendary Pictures. O longa teve seus efeitos especiais feitos pela Industrial
                     Light & Magic (CGI) e pela Legacy FX (animatrônicos).</p>
             </div>
         </div>
+    </div>
 
-      
-
-    <div class="footer" id="premios">
-        
-     <a id="premios">   PRÊMIOS </a>
-  Ano Categoria Resultado
-  1994 Melhor Filme Venceu
-  1994 Melhor Direção Venceu
-  1994 Melhor Figurino Indicado
-  1994 Melhor Escritor Venceu
-
+    <div class="footer">
+        <div class="prizes" id="premios">
+            <h2>Prêmios</h2>
+            <ul>
+                <li><strong>Ano:</strong> 1994 <strong>Categoria:</strong> Melhor Filme <strong>Resultado:</strong> Venceu</li>
+                <li><strong>Ano:</strong> 1994 <strong>Categoria:</strong> Melhor Direção <strong>Resultado:</strong> Venceu</li>
+                <li><strong>Ano:</strong> 1994 <strong>Categoria:</strong> Melhor Figurino <strong>Resultado:</strong> Indicado</li>
+                <li><strong>Ano:</strong> 1994 <strong>Categoria:</strong> Melhor Escritor <strong>Resultado:</strong> Venceu</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
