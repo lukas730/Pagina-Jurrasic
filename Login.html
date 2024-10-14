@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário Aula</title>
+    </head>
+    
+    <body>
+        <form>
+            <label>Nome</label>
+            <input type="text" placeholder="Digite seu nome" >
+            <br><br>
+
+            <label>E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" >
+            <br><br>
+
+            <label>Idade</label>
+            <input type="number" min="0" max="130" >
+            <br><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" name="sexoPessoa"  value="F">Feminino<br>
+            <input type="radio" name="sexoPessoa" value="M">Masculino
+            <br><br>
+
+            <label>Filmes Favoritos</label> <br>
+            <input type="checkbox" name="tropaelite"> Tropa de Elite <br>
+            <input type="checkbox" name="filme1"> filme 01 <br>
+            <input type="checkbox" name="filme2"> filme 02 <br>
+            <input type="checkbox" name="filme3"> filme 03 <br>
+            <input type="checkbox" name="filme4"> filme 04 <br>
+            <br>
+
+            <label>Estado Civil</label>
+            <select name="estadocivil">
+                <option value="s">Solteiro(a)</option>
+                <option value="c">Casado(a)</option>
+                <option value="d">Divorciado(a)</option>
+            </select>
+            <br><br>
+            
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Cadastrar">
+        </form>
+
+    </body>
+</html>
