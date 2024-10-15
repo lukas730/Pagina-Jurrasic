@@ -1,47 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Formulário Aula</title>
-    </head>
-    
-    <body>
-        <form>
-            <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome" >
-            <br><br>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Aula</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
 
-            <label>E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" >
-            <br><br>
+        form {
+            background-color: #ffffff;
+            border: 2px solid #e74c3c;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
 
-            <label>Idade</label>
-            <input type="number" min="0" max="130" >
-            <br><br>
+        label {
+            font-weight: bold;
+            color: #e74c3c;
+        }
 
-            <label>Sexo</label><br>
-            <input type="radio" name="sexoPessoa"  value="F">Feminino<br>
-            <input type="radio" name="sexoPessoa" value="M">Masculino
-            <br><br>
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+        }
 
-            <label>Filmes Favoritos</label> <br>
-            <input type="checkbox" name="tropaelite"> Tropa de Elite <br>
-            <input type="checkbox" name="filme1"> filme 01 <br>
-            <input type="checkbox" name="filme2"> filme 02 <br>
-            <input type="checkbox" name="filme3"> filme 03 <br>
-            <input type="checkbox" name="filme4"> filme 04 <br>
-            <br>
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
 
-            <label>Estado Civil</label>
-            <select name="estadocivil">
-                <option value="s">Solteiro(a)</option>
-                <option value="c">Casado(a)</option>
-                <option value="d">Divorciado(a)</option>
-            </select>
-            <br><br>
-            
-            <input type="reset" value="Limpar dados">
-            <input type="submit" value="Cadastrar">
-        </form>
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+            width: 48%;
+        }
 
-    </body>
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome" required>
+        
+        <label>E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" required>
+        
+        <label>Idade</label>
+        <input type="number" min="0" max="130" required>
+        
+        <label>Sexo</label><br>
+        <input type="radio" name="sexoPessoa" value="F" required>Feminino<br>
+        <input type="radio" name="sexoPessoa" value="M">Masculino<br>
+        
+        <label>Filmes Favoritos</label><br>
+        <input type="checkbox" name="tropaelite"> Tropa de Elite <br>
+        <input type="checkbox" name="filme1"> filme 01 <br>
+        <input type="checkbox" name="filme2"> filme 02 <br>
+        <input type="checkbox" name="filme3"> filme 03 <br>
+        <input type="checkbox" name="filme4"> filme 04 <br>
+        
+        <label>Estado Civil</label>
+        <select name="estadocivil">
+            <option value="s">Solteiro(a)</option>
+            <option value="c">Casado(a)</option>
+            <option value="d">Divorciado(a)</option>
+        </select>
+        
+        <input type="reset" value="Limpar dados">
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
 </html>
