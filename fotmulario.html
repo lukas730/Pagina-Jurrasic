@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html>
-      <head>
-        <title>Login</title>
-      </head>
-      <body>
-       <label>E-mail</label>
-       <input type="email" placeholder="Digite seu e-mail"> 
-       <input type="senha" placeholder="Digite sua senha">
-      </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="email"],
+        input[type="senha"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        input[type="senha"] {
+            type: password; /* Correção de tipo */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" required> 
+        <label>Senha</label>
+        <input type="password" placeholder="Digite sua senha" required>
+        <button type="submit" style="background-color: red; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Entrar</button>
+    </form>
+</body>
 </html>
